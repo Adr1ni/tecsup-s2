@@ -1,20 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adriano Gongora</title>
+	<meta charset="utf-8">
+	<title>Presentación personal</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container">
-        <h1>About me</h1>
-        <p></p>
-        <img src="algoritmos-inteligentes-para-combatir-el-crimen-mejor-que-en-breaking-bad.jpg" alt="">
+	<header>
+		<h1>Adriano Gongora</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Inicio</a></li>
+				<li><a href="#">Acerca de mí</a></li>
+				<li><a href="#">Mis habilidades</a></li>
+				<li><a href="#">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+    <div class="container">
+        <main>
+            <section>
+                <img src="data:image/jpeg;base64,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" 
+                class="doge">
+                <h2>Acerca de mí</h2>
+                <p>Mi nombre es Adriano Gongora Juárez, naci el 3 de septiembre del 2004 en la cuidad de Arequipa , desde pequeño me gusto mucho usar la computadora
+                    , tenia mucha curiosidad de como funcionaba y como se podian crear cosas con ella, termine el colegio en el 2021 y actualmente estoy estudiando 
+                    en Tecsup la carrera de diseño y desarrollo de software. Me puedo adaptar a cualquier tecnologia y me gustar probar muchas cosas.
+                </p>
+            </section>
+            <section>
+                <h2>Mis habilidades</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Java</li>
+                    <li>Spring Booth</li>
+                    <li>Git</li>
+                    <li>Python</li>
+                    <li>Linux</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Formacion personal</h2>
+                <p>Sertificado de Backend con Java de Platzi <br> Tercer semestre de la carrera de Diseño y desarrollo de software en tecsup</p>
+            </section>
+            <section>
+                <h2>Idiomas</h2>
+                <ul>
+                    <li>Español</li>
+                    <li>Ingles</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Contacto</h2>
+                <p>adriano.gongora@tecsup.edu.pe<br>Numero: 935875743</p>
+            </section>
+        </main>
     </div>
-    <br>
-    <div id="container"></div>
-    <footer><p>© 2023 Adriano Gongora</p></footer>
+
+	<footer>
+		<p>© 2023 Adriano Gongora</p>
+	</footer>
 </body>
 </html>
